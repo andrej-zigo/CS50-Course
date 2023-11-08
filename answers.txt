@@ -1,0 +1,14 @@
+First Question:
+1. I will calculate average of each value (energy, valence, danceability).
+2. I expect that I have the information of ratio of values across all music genres.
+   Afterward I will compare calculated values to the values in all music genres.
+3. Using this inofrmation I will create "Audio Aura" specific for the listener's
+   preferences.
+
+
+Second Question:
+This approach may not always be representative because a listener might
+favor specific artists and their unique compositions more than a particular music genre.
+Additionally, the music may feature artists from different countries, resulting in
+songs with languages the listener might not understand. These factors could pose
+challenges when using the suggested solution.
