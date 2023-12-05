@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h2>Stock Quote</h2>
+    {% if quote_info %}
+        <p>Name: {{ quote_info.name }}</p>
+        <p>Symbol: {{ quote_info.symbol }}</p>
+        <p>Price: {{ quote_info.price | usd }}</p>
+
+    {% else %}
+        <p>No stocks for the provided symbol.</p>
+    {% endif %}
+    <a href="/quote">See More Quotes</a>
+{% endblock %}
