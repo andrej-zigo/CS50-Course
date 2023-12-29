@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- General linking -->
+    <title>My Webpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery linking -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/hamburger.css">
+
+    <!-- Linking Fonts & Icons -->
+    <link rel="icon" href="/static/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+
+        <header id="logo" onclick="window.location.href= '#';">
+            <h3>&lt;/<span>Andrej</span>&gt;</h3>
+        </header>
+
+        <div class="nav-elements">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+    </nav>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <main class="main">
+            <div class="main-content">
+                <h3>Hi,</h3>
+                <h1>I'm <span>Andrej Zigo</span></h1>
+                <h2>Future Developer</h2>
+
+                <div class="btn-grp">
+                    <div class="btn primary" onclick="window.open('./static/resources/resume.pdf')">
+                        <p>My Resume</p>
+                    </div>
+                    <div class="btn secondary" onclick="window.open('#contact', '_self')">
+                        <p>Contact</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-img">
+                <img class="hero-img" src="./static/resources/hero-image.png" alt="Main image">
+            </div>
+        </main>
+    </div>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="about-img">
+            <img src="./static/resources/ryan-gosling.png" alt="My Photo">
+        </div>
+
+        <div class="about-content">
+            <div class="about-brief">
+                <h1>About Me</h1>
+                <p>Inspired by my experience in the CS50 course, I started my journey as a developer, focusing on C for understanding computer science principles.
+                    I expanded my skills with Python, delving into web technologies like HTML and CSS. Now, I'm exploring mobile app development, driven by a commitment to lifelong learning and a passion for creating user-friendly products.
+                    Join me on this innovative journey as we collaborate to develop engaging mobile experiences.</p>
+            </div>
+
+            <div class="about-tabs">
+                <ul class="tabs">
+                    <li class="tab" id="skill-head" onclick="viewTab('skills', 'skill-head')">Languages</li>
+                    <li class="tab" id="cert-head" onclick="viewTab('certification', 'cert-head')">Certification</li>
+                </ul>
+
+                <div class="tab-contents skills" id="skills">
+                    <div class="tab-content">
+                        <h3>Python</h3>
+                        <p>Basic concepts and small projects</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>HTML, CSS, JS, Flask</h3>
+                        <p>Creating few web-based projects</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>SQL</h3>
+                        <p>Working with databases, joining tables, etc.</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>C</h3>
+                        <p>Computer Science fundamentals - Arrays, Algorithms, Memory, Data Structures, etc.</p>
+                    </div>
+                </div>
+
+                <div class="tab-contents certification">
+                    <div class="tab-content link" onclick="window.open('https://pll.harvard.edu/course/cs50-introduction-computer-science')">
+                        <h3>CS50x: Introduction to Computer Science</h3>
+                        <p>Harvard CS50 (I hope so :D)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Wrapper -->
+    <section class="section portfolio" id="portfolio">
+        <div class="portfolio-wrapper">
+            <h2>Portfolio</h2>
+            <h3>Here you can find all of my code</h3>
+            <hr>
+            <a class="github-button" onclick="window.open('https://www.github.com/andrej-zigo')" alt="go-to-github">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Wrapper -->
+    <section class="section contact" id="contact">
+        <div class="contact-wrapper">
+            <h2>Contact Me</h2>
+            <div class="light-bar"></div>
+            <div class="contact-details">
+                <div class="contact-container mail" onclick="window.open('mailto:andrej.samuel.zigo@gmail.com');">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <a href="mailto:andrej.samuel.zigo@gmail.com" class="content-data">andrej.samuel.zigo@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-container phone" onclick="window.open('tel: +421918222555');">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <a href="tel: +421918222555" class="content-data">+421918222555</a>
+                    </div>
+                </div>
+
+                <div class="s-medias">
+                    <div class="social-media-pack">
+                        <a id="facebook" href="https://www.facebook.com/majk.zigo" target="_blank" rel="noopener" alt="facebook">
+                            <i class="fa fa-facebook contact-social"></i>
+                        </a>
+                        <a id="linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener" alt="linkedin">
+                            <i class="fa fa-linkedin contact-social"></i>
+                        </a>
+                        <a id="github" href="https://www.github.com/andrej-zigo" target="_blank" rel="noopener" alt="github">
+                            <i class="fa fa-github contact-social"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Wrapper -->
+    <footer class="footer">
+        <div class="problem-buttons">
+            {% if session["user_id"] %}
+            <form action="/send" method="post">
+                <div class="form-group mb-3">
+                    <input type="text" name="message" class="form-control" placeholder="Report Bugs">
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            <a href="/view">My Messages</a>
+            <a href="/logout">Log Out</a>
+            {% else %}
+            <a href="/register">Register</a>
+            <a href="/login">Log In</a>
+            {% endif %}
+        </div>
+        <hr>
+        <p>Made by Andrej Samuel Zigo</p>
+    </footer>
+
+    <!-- Linking JS -->
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>

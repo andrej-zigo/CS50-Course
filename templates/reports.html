@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bugs
+{% endblock %}
+
+{% block main %}
+    <h2 class="my-4"><a href="/">Back to the main site</a></h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Submitted bugs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for report in reports %}
+                <tr>
+                    <td>{{ report }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
