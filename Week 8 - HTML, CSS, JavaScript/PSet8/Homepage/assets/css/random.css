@@ -1,0 +1,57 @@
+/* Main Wrapper */
+.main-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main {
+    background-color: white;
+    min-height: 15vh;
+    padding-bottom: 10px;
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    position: relative;
+}
+
+/* Main Content */
+.main-content h3 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.main-content p {
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Meme Images */
+.random-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.random-img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 500px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 650px) {
+    .random-img {
+        max-width: 350px;
+        max-height: 250px;
+    }
+}
