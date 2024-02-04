@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It was fastest in sorted situation and it was significantly slower in random and reversed situation than sort2 and sort3.
+
+sort2 uses: Merge sort
+
+How do you know?: It took the least time in all situations. The time was consistent - about 1.3 seconds
+
+sort3 uses: Selection sort
+
+How do you know?: As it was explained - Sorting algorithm make same amount of steps for best and also for worst case scenario. In my testing, sort3 program took almost the same amount of time in all situations and it was about 3.4 seconds.
